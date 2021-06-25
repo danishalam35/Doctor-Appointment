@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".AllActivity.BookAnAppointmentActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbars"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary">
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_arrow_back_24"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cardiology"
+                android:textStyle="bold"
+                android:fontFamily="@font/adamina"
+                android:layout_marginLeft="30dp"/>
+        </androidx.appcompat.widget.Toolbar>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="65dp"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="15dp"
+            >
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="65dp"
+                android:layout_height="65dp"
+                android:src="@drawable/bkjbkj"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dr Adams Archer"
+                    android:textColor="#010101"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="20dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="14 yrs Experience"
+                    android:fontFamily="@font/adamina"
+                    android:layout_marginTop="2dp"
+                    android:textSize="13dp"
+                    android:layout_marginLeft="20dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="₹500 Consulting Fees"
+                    android:fontFamily="@font/adamina"
+                    android:layout_marginTop="2dp"
+                    android:textSize="13dp"
+                    android:layout_marginLeft="20dp"/>
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginTop="-50dp"
+                    android:layout_marginLeft="230dp"
+                    android:src="@drawable/khjkbhvh"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="4.5"
+                    android:textSize="12dp"
+
+                    android:fontFamily="@font/adamina"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginLeft="210dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="36 Reviews"
+                    android:textSize="10dp"
+                    android:fontFamily="@font/adamina"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginLeft="210dp"/>
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:layout_marginLeft="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Slect Date &amp; Time "
+            android:textSize="14dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/adamina"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:src="@drawable/cfhgf"
+
+                android:layout_marginTop="10dp"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/gtftdxx"
+                android:layout_marginTop="10dp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="27/05/2021"
+                android:textSize="12dp"
+                android:layout_marginTop="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10:10AM"
+                android:textSize="12dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"/>
+        </LinearLayout>
+        <Button
+            android:id="@+id/book_Appointment"
+            android:layout_width="match_parent"
+            android:background="@drawable/bg_login"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="20dp"
+            android:textColor="#ffffff"
+            android:textAllCaps="false"
+            android:layout_marginTop="320dp"
+            android:text="Proceed to Book Appointment"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

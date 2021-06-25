@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AllActivity.LoginActivity"
+    >
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_arrow_back_24"/>
+    </androidx.appcompat.widget.Toolbar>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17dp"
+            android:fontFamily="@font/adamina"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:text="Enter your mobile number"/>
+
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:weightSum="3"
+            android:padding="10dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/bg_card"
+            android:orientation="horizontal">
+
+
+            <com.hbb20.CountryCodePicker
+                android:id="@+id/ccp"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                app:ccp_textSize="16sp"
+                app:ccp_autoDetectCountry="true"
+                app:ccp_showNameCode="true"/>
+
+            <EditText
+                android:id="@+id/edt_Text"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:maxLength="10"
+
+                android:textColorHighlight="#000"
+                android:hint="Phone Number"
+                android:background="@null"
+                android:inputType="phone"
+                android:textSize="16sp"
+                />
+        </LinearLayout>
+
+
+
+        <TextView
+            android:id="@+id/getPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:textSize="14dp"
+            android:textColor="#1F1F1F"
+            android:fontFamily="@font/adamina"
+            android:layout_marginLeft="15dp"
+            android:text="By Continuing, you agree to our"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:textSize="16dp"
+        android:textColor="#000"
+        android:fontFamily="@font/adamina"
+        android:layout_marginLeft="15dp"
+        android:text="Term &amp; Conditions "/>
+
+
+    <Button
+        android:id="@+id/btnCon"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="15dp"
+        android:textColor="#fff"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/bg_login"
+        android:layout_marginTop="320dp"
+        android:text="Continue"/>
+
+
+    </LinearLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AllActivity.IntroActivity"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="480dp"
+        android:background="#212594">
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/screen_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+        <LinearLayout
+            android:id="@+id/layoutDots"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dots_height"
+            android:layout_marginTop="420dp"
+            android:layout_marginLeft="30dp"
+            android:orientation="horizontal">
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="15dp"
+            android:fontFamily="@font/alike"
+            android:text="Let's get started! Enter your mobile number"
+            android:textColor="#171616"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:weightSum="3"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:background="@drawable/bg_card"
+        android:orientation="horizontal">
+
+
+        <com.hbb20.CountryCodePicker
+            android:id="@+id/ccp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            app:ccp_textSize="14sp"
+            app:ccp_autoDetectCountry="true"
+            app:ccp_showNameCode="true"/>
+
+
+
+    </LinearLayout>
+
+
+
+    <TextView
+        android:id="@+id/getPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:textSize="14dp"
+        android:textColor="#010"
+        android:fontFamily="@font/alike"
+        android:layout_marginLeft="15dp"
+        android:text="Trouble signing in?"/>
+
+    </LinearLayout>
+
+</LinearLayout>
